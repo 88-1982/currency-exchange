@@ -1,3 +1,3 @@
-import Rectangle from  '../src/js/rectangle.js';
+import Rectangle from  '../src/js/.js';
 
 
