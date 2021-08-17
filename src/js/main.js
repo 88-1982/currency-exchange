@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import DollarConversion from './services/conversion-service.js';
+import DollarConversion from './services/dollar-conversion.js';
 import {convertCurrency} from './js/currency-functions.js';
 import {checkCurrency} from './js/currency-functions.js';
 
