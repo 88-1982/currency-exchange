@@ -1,6 +1,6 @@
-# currency-exchange
+# Currency-Exchange
 
-#### SGC
+#### 
 
 #### By DeAunte Hall
 
@@ -64,7 +64,7 @@ This example assumes your API Key is stored in an API_KEY variable, as described
 * _If [Node.js](https://nodejs.org/en/) and [Nope Package Manager (npm)](https://www.npmjs.com/) are not installed on your local device, follow the instructions [here](https://www.learnhowtoprogram.com/intermediate-javascript/getting-started-with-javascript/installing-node-js)_
 * _Navigate to the directory inside of which you wish to house this project_
 * _Clone this project with the following git command `$ git clone https://github.com/88-1982/currency-exchange.git`
-* _Navigate to the top level of the repository with the command `$ cd SGC`_
+* _Navigate to the top level of the repository with the command `$ cd currency-exchange`_
 * _Recreate project environment and install required dependencies with terminal command `$ npm install`_
 * _Create production environment with terminal command `$ npm run build`_
 * _Open project in a development server in the browser of your choice with the command `$ npm run start`_
