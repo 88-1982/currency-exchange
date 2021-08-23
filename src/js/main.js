@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import DollarConversion from './services/dollar-conversion.js';
+import dollarConversion from './services/dollar-conversion.js';
 import {convertCurrency} from './js/currency-functions.js';
 import {checkCurrency} from './js/currency-functions.js';
 
@@ -35,6 +35,7 @@ $(document).ready(function () {
     let toCurrency = $("#to-currency").val();
     try {
       let conversionResponse = await DollarConversion.getConversion(fromCurrency);
+      console.log()
       if (conversionResponse === Error) {
         throw Error();
       } else {
