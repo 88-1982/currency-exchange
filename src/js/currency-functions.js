@@ -1,5 +1,7 @@
+import { error } from "jquery";
+
 export function convertCurrency(rateResult, inputAmount, toCurrency){
-  if (NaN(rateResult) === true) {
+  if (isNaN(rateResult) === true) {
     return rateResult;
   } else {
     return (`${rateResult * inputAmount} ${toCurrency}`);
@@ -7,7 +9,7 @@ export function convertCurrency(rateResult, inputAmount, toCurrency){
 }
 
 export function checkCurrency(conversionResponse, toCurrency,fromCurrency) {
-  if (conversionResponse.result && conversionResponse["error-type"] === "unsupported-code") {
+  if (conversionResponse.result === "error" &&  conversionResponse["error-type"] === "unsupported-code") {
     return (`${fromCurrency} is not a currency in our database.`);
   }
   else if (toCurrency in conversionResponse.conversion_rates === false) {
