@@ -1,10 +1,10 @@
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/styles.css';
-import dollarConversion from './services/dollar-conversion.js';
-import {convertCurrency} from './js/currency-functions.js';
-import {checkCurrency} from './js/currency-functions.js';
+import '../css/styles.css';
+import dollarconversion from './services/dollar-conversion.js';
+import {convertCurrency, checkCurrency} from './currency-functions.js';
+
 
 //Checks to see if a number was inputted. Otherwise displays conversion in HTML.
 function emptyInput(inputAmount, fromCurrency, convertedAmount) {
@@ -34,8 +34,8 @@ $(document).ready(function () {
     let fromCurrency = $("#from-currency").val();
     let toCurrency = $("#to-currency").val();
     try {
-      let conversionResponse = await DollarConversion.getConversion(fromCurrency);
-      console.log()
+      let conversionResponse = await dollarconversion.getConversion(fromCurrency);
+      console.log(conversionResponse);
       if (conversionResponse === Error) {
         throw Error();
       } else {
